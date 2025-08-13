@@ -3,7 +3,6 @@ import styles from './personal.module.css';
 export function Personal() {
     return (
     <section className={styles.personalDetails}>
-        <h2>Personal Details</h2>
         <form className={styles.form}>
             <label htmlFor="name">Full Name</label>
             <input type='text' name='name' id='name'/>

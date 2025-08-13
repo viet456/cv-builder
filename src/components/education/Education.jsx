@@ -4,7 +4,6 @@ import styles from './education.module.css';
 export function Education() {
     return (
         <section className={styles.educationDetails}>
-            <h2>Education</h2>
             <form className={styles.form}>
                 <label htmlFor="school">School</label>
                 <input type="text" name="school" id="school" />

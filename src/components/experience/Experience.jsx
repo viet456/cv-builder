@@ -4,7 +4,6 @@ import styles from './experience.module.css';
 export function Experience() {
     return (
         <section className={styles.experienceDetails}>
-            <h2>Work Experience</h2>
             <form className={styles.form}>
                 <label htmlFor="company">Company Name</label>
                 <input type="text" name="company" id="company" />
