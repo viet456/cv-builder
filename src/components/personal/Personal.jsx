@@ -1,10 +1,11 @@
 import { useState } from 'react';
+import styles from './personal.module.css';
 
 export function Personal() {
     return (
-    <section className='personal-details'>
+    <section className={styles.personalDetails}>
         <h2>Personal Details</h2>
-        <form>
+        <form className={styles.form}>
             <label htmlFor="name">Full Name</label>
             <input type='text' name='name' id='name'/>
 
