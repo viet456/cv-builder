@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './personal.module.css';
 
 export function Personal() {
@@ -13,7 +12,7 @@ export function Personal() {
             <input type='email' name='email' id='email'/>
 
             <label htmlFor="phone">Phone Number</label>
-            <input type='number' name='phone' id='phone' />
+            <input type='tel' name='phone' id='phone' />
 
             <label htmlFor="city">City</label>
             <input type="text" name="city" id="city" />
