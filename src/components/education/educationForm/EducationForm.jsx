@@ -35,6 +35,7 @@ export function EducationForm({ onAddEducation }) {
                     id="school"
                     value={formData.school}
                     onChange={handleChange}
+                    required
                 />
 
                 <label htmlFor="major">Major</label>
