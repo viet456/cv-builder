@@ -3,7 +3,7 @@ import { Accordion } from "../../accordion/Accordion";
 import { ExperienceForm } from "../experienceForm/ExperienceForm";
 import { ExpListManager } from "../expListManager/ExpListManager";
 
-export function ExperienceSection() {
+export function ExperienceSection({openState}) {
     const [expList, setExpList] = useState([]);
     const handleAddExp = (newExpEntry) => {
         const entryWithId = {
@@ -12,7 +12,7 @@ export function ExperienceSection() {
         setExpList(prevList => [...prevList, entryWithId]);
     }
     return (
-        <Accordion title='Work Experience'>
+        <Accordion title='Work Experience' openState={openState}>
             <ExperienceForm onAddExp={handleAddExp}/>
             <ExpListManager items={expList}/>
         </Accordion>

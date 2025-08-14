@@ -81,10 +81,10 @@ export function ExperienceForm({ onAddExp }) {
                 />
 
                 <label htmlFor="description">Description</label>
-                <input
-                    type="text"
+                <textarea
                     name="description"
                     id="description"
+                    rows='4'
                     value={formData.description}
                     onChange={handleChange}
                 />

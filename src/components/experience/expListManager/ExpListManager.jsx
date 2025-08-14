@@ -9,9 +9,8 @@ export function ExpListManager({ items }) {
                             <li key={item.id}>
                                 <strong>{item.company}</strong>
                                 <strong>{item.startDate} to {item.endDate}</strong>
-                                <p style={{fontStyle: 'italic'}}>{item.position}</p>
-                                <p style={{fontStyle: 'italic'}}>{item.location}</p>
-                                <p>{item.description}</p>
+                                <p>{item.position}</p>
+                                <p>{item.location}</p>
                             </li>
                         )
                     })}
