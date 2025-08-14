@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import styles from './experience.module.css';
+import styles from './experienceForm.module.css';
 
-export function Experience() {
+export function ExperienceForm() {
     return (
         <section className={styles.experienceDetails}>
             <form className={styles.form}>
@@ -20,7 +19,7 @@ export function Experience() {
                 <label htmlFor="location">Location</label>
                 <input type="text" name="location" id="location" />
 
-                <label htmlFor="desc">Description</label>
+                <label htmlFor="description">Description</label>
                 <input type="text" name="description" id="description" />
             </form>
         </section>
