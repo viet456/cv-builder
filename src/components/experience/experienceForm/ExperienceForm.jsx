@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './experienceForm.module.css';
 
-export function ExperienceForm({ onAddExp }) {
+export function ExperienceForm({ onAddExperience }) {
     const [formData, setFormData] = useState({
         company: '',
         startDate: '',
@@ -19,7 +19,7 @@ export function ExperienceForm({ onAddExp }) {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        onAddExp(formData);
+        onAddExperience(formData);
         setFormData({
             company: '',
             startDate: '',

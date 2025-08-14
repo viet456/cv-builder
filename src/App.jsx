@@ -24,10 +24,12 @@ export function App() {
         }))
     }
     const handleAddEducation = (newEntry) => {
-        setEducationList(prevList => [...prevList, newEntry]);
+        const entryWithId = { ...newEntry, id: crypto.randomUUID() };
+        setEducationList(prevList => [...prevList, entryWithId]);
     }
     const handleAddExperience = (newEntry) => {
-        setExperienceList(prevList => [...prevList, newEntry]);
+        const entryWithId = { ...newEntry, id: crypto.randomUUID()};
+        setExperienceList(prevList => [...prevList, entryWithId]);
     }
     const cvData = { personalDetails, educationList, experienceList };
     return (
@@ -36,11 +38,17 @@ export function App() {
                 <Accordion title='Personal Details' openState={true}>
                     <Personal details={personalDetails} onDetailsChange={handleChange} />
                 </Accordion>
-                <EducationSection onAddEducation={handleAddEducation}/>
-                <ExperienceSection onAddExperience={handleAddExperience}/>
+                <EducationSection 
+                    onAddEducation={handleAddEducation} 
+                    items={educationList}
+                />
+                <ExperienceSection 
+                    onAddExperience={handleAddExperience}
+                    items={experienceList}
+                />
             </div>
             <div className="previewSide">
-                <Preview cvData={cvData}/>
+                <Preview cvData={cvData} />
             </div>
         </div>
     );

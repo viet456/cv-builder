@@ -1,0 +1,18 @@
+.appContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.editorSide {
+    flex: 0 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.previewSide {
+    width: 816px;
+    height: 1152px;
+    color: black;
+    background: white;
+    box-sizing: border-box;
+}
